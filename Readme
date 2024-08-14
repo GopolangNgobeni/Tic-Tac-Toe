@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 Tic-Tac-Toe Game
 Overview
 This is a simple console-based Tic-Tac-Toe game implemented in Python. The game can be played between two human players or a human player against the computer. The game board is 3x3, and the objective is to align three of your symbols in a row, column, or diagonal.
@@ -40,6 +40,5 @@ Board Representation
 The board is a list of 9 elements, initialized with empty spaces.
 Each element represents a cell in the 3x3 grid.
     
-=======
-Tic tac toe Game
->>>>>>> 50ec0e75878305679ccae6f4b0e1e1558fa958e1
+
+
