@@ -1,0 +1,41 @@
+Tic-Tac-Toe Game
+Overview
+This is a simple console-based Tic-Tac-Toe game implemented in Python. The game can be played between two human players or a human player against the computer. The game board is 3x3, and the objective is to align three of your symbols in a row, column, or diagonal.
+
+Features
+Two Player Mode: Play against another person on the same computer.
+Single Player Mode: Play against the computer, which makes random moves or attempts to block the player from winning.
+Dynamic Board Display: The board adjusts to show moves and game state clearly.
+Requirements
+Python 3.x
+No external libraries are required
+How to Run
+Clone or Download the repository.
+
+Open a terminal or command prompt.
+
+Navigate to the directory containing the tic_tac_toe.py file.
+
+Run the script using Python:
+
+bash
+Copy code
+python tic_tac_toe.py
+How to Play
+Starting the Game:
+
+Upon running the script, you will be prompted to enter the number of players: 1 for playing against the computer, or 2 for playing against another player.
+Making a Move:
+
+The game will display the board, and you will be prompted to enter your move. Enter a number between 1 and 9 corresponding to the position on the board.
+Winning the Game:
+
+The game will automatically check for a winner after every move. If a player aligns three of their symbols in a row, column, or diagonal, they win.
+Ending the Game:
+
+The game will declare a draw if all spots on the board are filled and no player has won.
+Code Explanation
+Board Representation
+The board is a list of 9 elements, initialized with empty spaces.
+Each element represents a cell in the 3x3 grid.
+    
