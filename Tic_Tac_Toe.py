@@ -2,9 +2,11 @@ import random
 import sys
 
 # Initialize the board
+
 board = [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ']
 
 # Function to display the board
+
 def print_board():
     print(f" {board[0]} | {board[1]} | {board[2]} ")
     print("---+---+---")
@@ -13,6 +15,7 @@ def print_board():
     print(f" {board[6]} | {board[7]} | {board[8]} ")
 
 # Function to check if a player has won
+
 def check_winner(player):
     winning_combinations = [
         (0, 1, 2),  # Row 1
@@ -26,16 +29,19 @@ def check_winner(player):
     ]
     
     # Checking if any winning combination is met
+    
     for combo in winning_combinations:
         if board[combo[0]] == board[combo[1]] == board[combo[2]] == player:
             return True
     return False
 
 # Function to check if the game is a draw
+
 def check_draw():
     return all(space != ' ' for space in board)
 
 # Function to find the best move for the computer (either to win or block)
+
 def find_best_move(player):
     winning_combinations = [
         (0, 1, 2),  # Row 1
@@ -58,6 +64,7 @@ def find_best_move(player):
     return None
 
 # Function to execute the computer's move
+
 def computer_move():
     move = find_best_move('O')
     if move is not None:
@@ -73,13 +80,16 @@ def computer_move():
     if available_moves:
         move = random.choice(available_moves)
         board[move] = 'O'
+        
 
 # Function to reset the board for a new game
+
 def reset_board():
     global board
     board = [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ']
 
 # Function to play the game
+
 def play_game():
     global board
     while True:
@@ -135,6 +145,7 @@ def play_game():
         if play_again.lower() != 'y':
             print("Thanks for playing!")
             sys.exit()
+            
 
 if __name__ == "__main__":
     print("Welcome to Tic-Tac-Toe!")
