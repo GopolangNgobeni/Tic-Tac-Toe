@@ -1,9 +1,11 @@
 
 Tic-Tac-Toe Game
+
 Overview
 This is a simple console-based Tic-Tac-Toe game implemented in Python. The game can be played between two human players or a human player against the computer. The game board is 3x3, and the objective is to align three of your symbols in a row, column, or diagonal.
 
 Features
+
 Two Player Mode: Play against another person on the same computer.
 Single Player Mode: Play against the computer, which makes random moves or attempts to block the player from winning.
 Dynamic Board Display: The board adjusts to show moves and game state clearly.
